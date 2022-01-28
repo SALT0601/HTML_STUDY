@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+    <h1>표 만들기</h1>
+
+    <table width="800px" border="1">
+        <caption>
+            표 제목
+        </caption>
+
+        <tr>
+            <th>id</th>
+            <!--중앙 정렬에 BOLD가 적용-->
+            <th>name</th>
+            <th>Address</th>
+            <!--여기가 3개면 밑에도 3개여야 안깨짐-->
+        </tr>
+        <tr>
+            <td>1</td>
+            <!--좌측 정렬에 일반 텍스트-->
+            <td>Robert</td>
+            <td>LA</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <!--좌측 정렬에 일반 텍스트-->
+            <td>Ace</td>
+            <td>Canada</td>
+        </tr>
+    </table>
+
+    <h3>가로 칸 병합</h3>
+    <table width="800px" border="1">
+        <tr>
+            <td colspan="3">A</td>
+            <td colspan="2">B</td>
+        </tr>
+        <tr>
+            <td>
+                c
+            </td>
+            <td colspan="2">D</td>
+            <td colspan="2">E</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+            <td>J</td>
+        </tr>
+        <tr>
+            <td colspan="2">k</td>
+            <td>L</td>
+            <td>M</td>
+            <td>N</td>
+
+        </tr>
+    </table>
+
+    <h3>세로칸 병합</h3>
+    <table width="800px" border="1">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td colspan="2">D</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>F</td>
+            <td rowspan="3">G</td>
+            <td rowspan="2">H</td>
+            <td rowspan="2">I</td>
+        </tr>
+        <tr>
+            <td rowspan="2">J</td>
+            <td>K</td>
+        </tr>
+        <tr>
+            <td>L</td>
+            <td>M</td>
+            <td>N</td>
+
+        </tr>
+    </table>
+
+    <h3>가로 세로 합치기</h3>
+    <table width="800px" border="1">
+        <tr>
+            <td colspan="2">A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>F</td>
+            <td colspan="2">G</td>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="3">I</td>
+            <td>J</td>
+            <td colspan="2">K</td>
+        </tr>
+        <tr>
+            <td>L</td>
+            <td colspan="2" rowspan="2">M</td>
+        </tr>
+        <tr>
+            <td>N</td>
+        </tr>
+    </table>
+
+    <h3>애매한 테이블</h3>
+    <table width="800px">
+        <tr>
+            <td width="300px">
+                <img src="./images/activity.jpg" />
+            </td>
+            <td rowspan="3" width="500%" valign="top">
+                <table width="100%">
+                    <tr>
+                        <td>div에서 블록 형식으로 공간 분할이라고 되어있습니다.
+
+                            이것은 말 그대로 여러 가지 태그를 묶은 형식이라고 보면 되겠습니다.
+                            [출처] HTML - 13 : 공간 분할 태그 (div, span)|작성자 하프
+                            <br>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>span 태그는 인라인 형식으로 공간을 분할한다고 되어있습니다.
+
+                            In Line 라인인에 속한다는 뜻입니다.
+
+                            즉 개행(Enter)를 하지 않는다고 보시면 되겠습니다.
+                            [출처] HTML - 13 : 공간 분할 태그 (div, span)|작성자 하프
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+        </tr>
+
+    </table>
+
+
+
+</body>
+
+</html>

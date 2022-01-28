@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+    <h1>Table</h1>
+    <table width="800" border="1" align="center">
+        <colgroup>
+            <!--이렇게 지정하면 안쪽에서 일일이 지정할 필요 없음-->
+            <col width="100px" style="background-color: tomato;" />
+            <col width="100px" />
+            <col width="600px" />
+        </colgroup>
+        <thead>
+            <!--맨 처음 하나만 온다-->
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!--하나 이상 올 수 있음-->
+            <tr>
+                <td>1</td>
+                <td>NolBu</td>
+                <td>Seoul</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>HunBu</td>
+                <td>Busan</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>2</td>
+                <td colspan="2">SEND</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>
